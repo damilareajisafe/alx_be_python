@@ -22,7 +22,7 @@ class Library:
                 return
         # print(f"Book titled '{title}' not found in the library.")
 
-    def return_book(self, title):
+    def return_book(self, title=None):
         for book in self._books:
             if book.title == title:
                 if book.is_checked_out:
